@@ -3,13 +3,14 @@
 public class Main {
 
     public static void main(String[] args) {
-        Author lukyanenkoS =  new Author("Cергей", "Лукьяненко");
-
+        Author lukyanenkoS =  new Author("Сергей", "Лукьяненко");
         Author musanifS = new Author("Сергей", "Мусаниф");
         Book coldStars = new Book("Звёзды - Холодные игрушки", 1998, lukyanenkoS);
         Book empireDance = new Book("Имперские танцы", 2007, musanifS);
+        System.out.println(lukyanenkoS.getFirstName() + " " + lukyanenkoS.getLastName());
+        System.out.println(lukyanenkoS);
         System.out.println("empireDance = " + empireDance.getTitle() + " " + empireDance.getYearPublishing());
         empireDance.setYearPublishing(2006);
-        System.out.println("empireDance = " + empireDance.getAuthor() + " " +empireDance.getTitle() + " " + empireDance.getYearPublishing());
+        System.out.println("empireDance = " + empireDance.getAuthor() + " " + empireDance.getTitle() + " " + empireDance.getYearPublishing());
     }
 }

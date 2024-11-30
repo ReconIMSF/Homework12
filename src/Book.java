@@ -7,7 +7,7 @@ public class Book {
         // конструтор для автоматизированного создания книг
         this.title = title; // задание имени книги (обращение к свойству класса Book)
         this.yearPublishing = yearPublishing; // задание книги года издания книги (обращение к свойству класса Book)
-        author = author;
+        this.author = author;
     }
 
     public String getTitle() {
