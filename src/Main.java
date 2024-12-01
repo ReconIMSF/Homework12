@@ -3,7 +3,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        Author lukyanenkoS =  new Author("Сергей", "Лукьяненко");
+        Author lukyanenkoS = new Author("Сергей", "Лукьяненко");
         Author musanifS = new Author("Сергей", "Мусаниф");
         Book coldStars = new Book("Звёзды - Холодные игрушки", 1998, lukyanenkoS);
         Book empireDance = new Book("Имперские танцы", 2007, musanifS);
@@ -12,5 +12,9 @@ public class Main {
         System.out.println("empireDance = " + empireDance.getTitle() + " " + empireDance.getYearPublishing());
         empireDance.setYearPublishing(2006);
         System.out.println("empireDance = " + empireDance.getAuthor() + " " + empireDance.getTitle() + " " + empireDance.getYearPublishing());
+        System.out.println(coldStars.equals(empireDance));
+        System.out.println(lukyanenkoS.equals(musanifS));
+        System.out.println(coldStars.hashCode());
+        System.out.println(empireDance.hashCode());
     }
 }
